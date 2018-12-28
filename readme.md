@@ -10,9 +10,9 @@ create database in phpmyadmin
 update database configuration in .env file (database name , user and password)
 
 in cmd run these commands
-php artisan migrate
-php artisan db:seed
-php artisan key:generate 
+1-php artisan migrate
+2-php artisan db:seed
+3-php artisan key:generate 
 
 url of blog  : url/home
 url of adminpanel  : url/admin
