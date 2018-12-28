@@ -10,11 +10,11 @@
             <!-- ============================================================== -->
             <div class="row page-titles">
                 <div class="col-md-5 align-self-center">
-                    <h3 class="text-themecolor">Nafham</h3>
+                    <h3 class="text-themecolor">Mumm </h3>
                 </div>
                 <div class="col-md-7 align-self-center">
                     <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="javascript:void(0)">Companies</a></li>
+                        <li class="breadcrumb-item"><a href="javascript:void(0)">Posts</a></li>
                         <li class="breadcrumb-item active">Home</li>
                     </ol>
                 </div>
@@ -37,17 +37,18 @@
                 <div class="col-12">
                         <div class="card">
                             <div class="card-body">
-                                <h4 class="card-title">Employee Inofrmation</h4>
+                                <h4 class="card-title">Post Inofrmation</h4>
                                 <div class="table-responsive">
                                     <table class="table table-bordered">
                                         <thead>
                                         <tr>
 
-                                                <th>Email : {{$employee->email}}</th>
-                                                <th>Phone : {{$employee->phone}}</th>
-                                                <th>Company : {{$employee->get_company->name}}</th>
-                                                <th>Lastname : {{$employee->last_name}}</th>
-                                                <th> Firstname : {{$employee->first_name}}</th>
+                                                <th>title : {{$post->title}}</th>
+                                                <th>description : {{$post->description}}</th>
+                                                <th>category : {{$post->get_category->name}}</th>
+                                                <th>content : {{$post->content}}</th>
+                                                <th><img style="width:100px;height:100px;" src="{{url('/images/posts/'.$post->image)}}"></th>
+
 
                                             </tr>
                                         </thead>

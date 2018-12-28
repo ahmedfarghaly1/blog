@@ -16,7 +16,7 @@
       <a class="navbar-brand" href="#">Mumm Task</a>
     </div>
     <ul class="nav navbar-nav">
-      <li class="active"><a href="#">Home</a></li>
+      <li class="active"><a href="{{route('home')}}">Home</a></li>
       @foreach($categories as $category)
       <li><a href="{{route('postCategory',['id'=>$category->id])}}">{{$category->name}}</a></li>
       @endforeach
